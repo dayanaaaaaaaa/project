@@ -17,7 +17,12 @@ def NivelDePeso(IMC):
     elif IMC >= 50:
         return "Obesidad 4"
     
-weight_peso = float(input("Ingrese el peso (Kg): "))
-height_altura = float(input("Ingrese su altura (m): "))
 
-print("Su nivel de peso es:", NivelDePeso(calcularIMC(weight_peso, height_altura)))
+answ = "y"
+while answ == "y":
+    weight_peso = float(input("Ingrese el peso (Kg): "))
+    height_altura = float(input("Ingrese su altura (m): "))
+
+    print("Su nivel de peso es:", NivelDePeso(calcularIMC(weight_peso, height_altura)))
+
+    answ = input ("Do you want to continue? (write 'y') :")

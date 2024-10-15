@@ -49,7 +49,7 @@ for i in range(-2,5,2): # range (begining, end (without), step)
 print("--------------------")
 
 answ = "y"
-while(answ == "y"):
+while answ == "y":
     sk1 = int(input("pirmais: "))
     sk2 = int(input("otrais: "))
     print(calculate(sk1,sk2))
